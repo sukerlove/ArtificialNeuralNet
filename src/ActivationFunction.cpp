@@ -14,6 +14,8 @@ ActivationFunction * FunctionFactory::getActivationFunction(FunctionType type)
 		return new Linear;
 	case SigmoidF:
 		return new Sigmoid;
+	case Invalid:
+		return 0;
 	}
 	return 0;
 }

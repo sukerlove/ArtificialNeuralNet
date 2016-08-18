@@ -9,7 +9,8 @@ namespace ann
 		BinaryF,
 		BipolarF,
 		LinearF,
-		SigmoidF
+		SigmoidF,
+		Invalid
 	};
 
 	//Virtual base class

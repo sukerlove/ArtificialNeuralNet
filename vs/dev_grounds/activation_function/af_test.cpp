@@ -10,6 +10,7 @@ int main()
 	cout << "Input: ";
 	cin >> input;
 
+	cout << "Testing Factory" << endl;
 	ActivationFunction * af = 0;
 	af = FunctionFactory::getActivationFunction(BinaryF);
 	cout << "Binary output = " << af->calculate(input) << endl;
@@ -19,6 +20,7 @@ int main()
 	cout << "Linear output = " << af->calculate(input) << endl;
 	af = FunctionFactory::getActivationFunction(SigmoidF);
 	cout << "Sigmoid output = " << af->calculate(input) << endl;
+
 	system("pause");
 	return 0;
 }
